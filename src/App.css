@@ -196,7 +196,7 @@ Menu
   display: grid;
   gap: 1rem 2rem;
   max-width: 25rem;
-  padding: .5rem;
+  padding: 1rem .9rem;
   border-radius: 8px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.4);
 }
