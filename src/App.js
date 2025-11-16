@@ -1,8 +1,16 @@
 import React, { useState } from 'react';
 import Categories from './Components/Categories';
 import Menu from './Components/Menu';
+import menus from './data';
 
 function App() {
+
+  const [selectedCategory, setSelectedCategory]= useState("All")
+
+  const filteredMenus =
+  selectedCategory === "All"
+    ? menus
+    : menus.filter(item => item.category === selectedCategory);
 
   return (
     <main>
@@ -12,8 +20,8 @@ function App() {
           <div className="underline"></div>
         </div>
       </section>
-      <Categories/>
-      <Menu />
+      <Categories selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory}/>
+      <Menu menus={filteredMenus} />
     </main>
   );
 }
