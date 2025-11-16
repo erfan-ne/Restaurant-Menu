@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Categories from './Components/Categories';
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
           <div className="underline"></div>
         </div>
       </section>
+      <Categories/>
     </main>
   );
 }

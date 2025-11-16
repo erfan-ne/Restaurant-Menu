@@ -1,6 +1,11 @@
 import React, { useState } from "react";
+import menus from "../data"
 
 const Categories = () => {
+
+  const mainCategories = [...new Set(menus.map(menu => menu.category))];
+  const [selectCategory, setSelectCategory] = useState("")
+
 
   return (
     <div className="btn-container">
@@ -11,7 +16,15 @@ const Categories = () => {
       >
         All
       </button>
-      );
+      {mainCategories.map(mainCategory => 
+        <button
+        type="button"
+        className="filter-btn"
+      >
+        {mainCategory}
+      </button>
+      )}
+      
     </div>
   );
 };

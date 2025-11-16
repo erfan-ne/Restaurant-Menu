@@ -1,4 +1,4 @@
-const menu = [
+const menus = [
   {
     id: 1,
     title: 'buttermilk pancakes',
@@ -73,4 +73,4 @@ const menu = [
   },
 ];
 
-export default menu;
+export default menus;
