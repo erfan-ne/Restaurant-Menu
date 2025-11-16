@@ -14,7 +14,9 @@ const Menu = () => {
                 <h4 className="price">${menu.price}</h4>
               </header>
               <p className="item-text">{menu.desc}</p>
-
+              <footer>
+                <caption>{menu.category}</caption>
+              </footer>
             </div>
           </article>
       ))}
