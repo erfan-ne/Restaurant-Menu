@@ -196,6 +196,9 @@ Menu
   display: grid;
   gap: 1rem 2rem;
   max-width: 25rem;
+  padding: .5rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.4);
 }
 .photo {
   object-fit: cover;
@@ -224,10 +227,14 @@ Menu
 }
 
 @media screen and (min-width: 768px) {
+  .section-center {
+    width: 95vw;
+    grid-template-columns: 1fr 1fr;
+  }
   .menu-item {
-    grid-template-columns: 225px 1fr;
-    gap: 0 1.25rem;
-    max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
   }
   .photo {
     height: 175px;
@@ -238,8 +245,11 @@ Menu
     width: 95vw;
     grid-template-columns: 1fr 1fr;
   }
-  .photo {
-    height: 150px;
+  .menu-item {
+    display: grid;
+    grid-template-columns: 225px 1fr;
+    gap: 0 1.25rem;
+    max-width: 40rem;
   }
 }
 
