@@ -205,6 +205,12 @@ Menu
   border-radius: var(--radius);
   display: block;
 }
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .item-info header {
   display: flex;
   justify-content: space-between;
@@ -215,10 +221,6 @@ Menu
 }
 .price {
   color: var(--clr-gold);
-}
-.item-text {
-  margin-bottom: 0;
-  padding-top: 1rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -239,4 +241,8 @@ Menu
   .photo {
     height: 150px;
   }
+}
+
+footer {
+  border-top: 0.5px dotted var(--clr-grey-5);
 }
