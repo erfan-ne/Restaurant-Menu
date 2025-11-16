@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Categories from './Components/Categories';
+import Menu from './Components/Menu';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
         </div>
       </section>
       <Categories/>
+      <Menu />
     </main>
   );
 }
