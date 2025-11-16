@@ -4,7 +4,6 @@ import menus from "../data"
 const Categories = () => {
 
   const mainCategories = [...new Set(menus.map(menu => menu.category))];
-  const [selectCategory, setSelectCategory] = useState("")
 
 
   return (
@@ -17,7 +16,7 @@ const Categories = () => {
         All
       </button>
       {mainCategories.map(mainCategory => 
-        <button
+        <button key={mainCategory}
         type="button"
         className="filter-btn"
       >
