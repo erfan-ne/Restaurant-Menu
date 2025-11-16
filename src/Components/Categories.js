@@ -21,7 +21,7 @@ const Categories = () => {
       {mainCategories.map(mainCategory => 
         <button key={mainCategory}
         type="button"
-        className="filter-btn"
+        className={selectCategory === mainCategory ? "filter-btn highlight" : "filter-btn"}
         onClick={() => setSelectCategory(mainCategory)}
       >
         {mainCategory}
