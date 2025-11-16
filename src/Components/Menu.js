@@ -7,7 +7,7 @@ const Menu = () => {
         <div className="section-center">
       {menus.map((menu) => (
           <article className="menu-item" key={menu.id}>
-            <img src="./images/item-8.jpeg" className="photo" />
+            <img src={menu.img} className="photo" />
             <div className="item-info">
               <header>
                 <h4>{menu.title}</h4>
