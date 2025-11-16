@@ -15,7 +15,7 @@ const Menu = () => {
               </header>
               <p className="item-text">{menu.desc}</p>
               <footer>
-                <caption>{menu.category}</caption>
+                <span>Category: {menu.category}</span>
               </footer>
             </div>
           </article>
